@@ -31,7 +31,7 @@
 		kerning-heading:			0.25em
 	);
 
-	$palette: (
+	/* $palette: (
 		bg:								#202124,
 		bg-alt:						#101010,
 		fg:								#f0f0ff,
@@ -41,17 +41,17 @@
 		border-bg:				rgba(80, 13, 13, 0.075),
 		border-alt:				rgba(160,160,160,0.65),
 		accent:						#2e59ba
-	);
+	); */
 // Light theme
 // Palette.
-	// $palette: (
-	// 	bg:							#ffffff,
-	// 	bg-alt:						#f4f4f4,
-	// 	fg:							#646464,
-	// 	fg-bold:					#3c3b3b,
-	// 	fg-light:					#aaaaaa,
-	// 	border:						rgba(160,160,160,0.3),
-	// 	border-bg:					rgba(160,160,160,0.075),
-	// 	border-alt:					rgba(160,160,160,0.65),
-	// 	accent:						#2e59ba
-	// );
+	$palette: (
+		bg:							#ffffff,
+		bg-alt:						#f4f4f4,
+		fg:							#646464,
+		fg-bold:					#3c3b3b,
+		fg-light:					#aaaaaa,
+		border:						rgba(160,160,160,0.3),
+		border-bg:					rgba(160,160,160,0.075),
+		border-alt:					rgba(160,160,160,0.65),
+		accent:						#2e59ba
+	);

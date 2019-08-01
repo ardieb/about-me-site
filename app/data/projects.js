@@ -14,6 +14,24 @@ const data = [
     + 'controller. The arduino then animates WS2811 lights in response and sends '
     + 'the response back to shadow document',
   },
+  {
+    title: 'OAlgebra',
+    link: 'https://github.com/ardieb/oAlgebra',
+    date: 'April 2019', 
+    desc: 'OAlgebra is a numpy styled library, written for matrix computations. '
+    + 'The library is written entirely in OCaml. It includes an interpreter '
+    + 'and abstract mathamatical language that can converts regex expressions '
+    + 'into an abstract syntax tree that can be evaluated.'
+  },
+  {
+    title: 'cryptoAI',
+    link: 'https://github.com/ardieb/cryptoAI',
+    date: 'July 2019',
+    desc: 'Built to test using AI in python. Collects data from Crypto Compare '
+    + 'API and uses a 3 layer network to process the data. Creates a machine '
+    + 'learning model that can predict prices of various trading symbols. '
+    + 'Built using pytorch and pandas. CUDA compatible.'
+  }
 ];
 
 export default data;
