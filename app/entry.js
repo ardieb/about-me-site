@@ -19,7 +19,7 @@ import './static/css/main.scss';
 
 // Renders elements to the DOM. Main entry point for the application
 ReactDOM.render(
-  <Router basename={BASE_PATH}>
+  <Router basename="">
     <Switch>
       <Route exact path="/" component={Index} />
       <Route path="/about" component={About} />

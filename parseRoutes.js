@@ -7,7 +7,7 @@ import data from './app/data/routes';
  */
 
 data.filter(route => !route.index).forEach((route) => {
-  const subdir = route.path.substr(1);
+  const subdir = route.path.substr(1) || '';
   const dir = path.join(__dirname, 'dist', subdir);
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir);
