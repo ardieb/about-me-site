@@ -31,6 +31,14 @@ const data = [
     + 'API and uses a 3 layer network to process the data. Creates a machine '
     + 'learning model that can predict prices of various trading symbols. '
     + 'Built using pytorch and pandas. CUDA compatible.'
+  },
+  {
+    title: 'ISS Tracker',
+    link: 'https://github.com/ardieb/ISS-Tracker.git',
+    date: 'August 2019',
+    desc: 'Test APP built to test graphing in python with plotly and dash app. '
+    + 'Tracks the posotion of the ISS in realtime and updates the graph on the '
+    + 'world map.'
   }
 ];
 

@@ -44,42 +44,41 @@ export default {
   module: {
     rules: [
       {
-        test: /\.js?$/,
+        test: /\.([tj])sx?$/,
+        use: { loader: 'ts-loader' },
         exclude: /node_modules/,
-        loader: 'babel-loader',
-      }, {
+      },
+      {
         test: /\.md$/,
         use: [{
           loader: 'raw-loader',
         }],
-      }, {
+      },
+      {
         test: /\.css$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {},
-          },
-          'css-loader?modules&localIdentName=[name]---[local]---[hash:base64:5]',
-        ],
-      }, {
+        loader: 'style-loader!css-loader?modules&localIdentName=[name]---[local]---[hash:base64:5]',
+      },
+      {
         test: /\.scss$/,
         loaders: 'style-loader!css-loader!sass-loader?modules&localIdentName=[name]---[local]---[hash:base64:5]',
-      }, {
+      },
+      {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'url-loader',
         options: {
           limit: 10000,
           mimetype: 'application/font-woff',
         },
-      }, {
+      },
+      {
         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'file-loader',
-      }, {
+      },
+      {
+        enforce: 'pre',
         test: /\.js$/,
-        loader: 'strip-loader?strip[]=console.log',
-      }, {
-        test: /\.html$/,
-        loader: 'raw-loader',
+        exclude: /node_modules/,
+        loader: 'source-map-loader',
       },
     ],
   },
